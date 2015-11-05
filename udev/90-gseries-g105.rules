@@ -1,0 +1,6 @@
+# Rules for Logitech G-Series G105 gaming keyboard
+# These rules have to be applied after 50-udev-default-rules.for mode changes
+# to not be overridden
+
+SUBSYSTEM=="input", KERNEL=="event[0-9]*", ACTION=="add", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c248", GROUP="input", MODE="0660"
+SUBSYSTEM=="hidraw", KERNEL=="hidraw[0-9]*", ACTION=="add", ATTRS{idVendor}=="046d", ATTRS{idProduct=="c248", GROUP="input", MODE="0660"
