@@ -1,0 +1,8 @@
+
+report (size 3) (numbered) =  03 08 00
+ff00.0003 = 8
+ff00.0003 = 0
+
+report (size 3) (numbered) =  03 00 00
+ff00.0003 = 0
+ff00.0003 = 0
