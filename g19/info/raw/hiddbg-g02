@@ -1,0 +1,16 @@
+report (size 4) (numbered) =  02 02 00 40
+ff00.0002 = 2
+ff00.0002 = 0
+ff00.0002 = 64
+
+report (size 7) (numbered) =  03 3b 00 00 00 00 00
+Keyboard.003b = 1
+
+report (size 4) (numbered) =  02 00 00 40
+ff00.0002 = 0
+ff00.0002 = 0
+ff00.0002 = 64
+
+report (size 7) (numbered) =  03 00 00 00 00 00 00
+Keyboard.003b = 0
+

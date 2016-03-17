@@ -1,0 +1,10 @@
+report (size 4) (numbered) =  02 00 10 40
+ff00.0002 = 0
+ff00.0002 = 16
+ff00.0002 = 64
+
+report (size 4) (numbered) =  02 00 00 40
+ff00.0002 = 0
+ff00.0002 = 0
+ff00.0002 = 64
+
