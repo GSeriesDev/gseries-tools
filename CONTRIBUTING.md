@@ -5,12 +5,12 @@ project by providing information on your device:
 
 # lsusb
 Provide a verbose `lsusb` for your device; if it only presents itself as one usb
-device, name it `lsusb`, else, name it `lsusb.pid` separately for each device,
-where `pid` is the device's usb product id:
+device, name it `lsusb.pid` separately for each device, where `pid` is the device's
+usb product id:
 
 ## Logitech G105 Keyboard
 ```shell
-$ lsusb -vv -d 046d:c248 > g105/info/lsusb
+$ lsusb -vv -d 046d:c248 > g105/info/lsusb.c248
 ```
 ## Logitech G19 Keyboard
 ```shell
@@ -19,7 +19,7 @@ $ lsusb -vv -d 046d:c229 > g19/info/lsusb.c229
 ```
 ## Logitech G602 Mouse
 ```shell
-$ lsusb -vv -d 046d:c537 > g602/info/lsusb
+$ lsusb -vv -d 046d:c537 > g602/info/lsusb.c537
 ```
 
 # HID Report Descriptor
@@ -31,17 +31,17 @@ mount -t debugfs none /sys/kernel/debug
 ```
 After which, your device's report descriptor can be found at:
 `/sys/kernel/debug/hid/XXXX:VID:PID.YYYY/rdesc`
+
 VID and PID refer to the usb vendor and product ids; for Logitech devices, VID
-is always 046D. XXXX's meaning is currently unknown to me, and YYYY is variable,
-and can be changed with each unplug/replug of your device, or other operations
-against it. Name it `rdesc.n`, where n is the usb interface of the device,
-unless it presents itself as more than one usb device, in which case name it
-similarly to the lsusb file, `rdesc.pid.n`
+is always 046D. XXXX represents the 'bus' the device is on, typically this is
+0003 for the usb bus, and YYYY is variable, and can be changed with each
+unplug/replug of your device, or other operations against it. Name it similarly
+to the lsusb file `rdesc.pid.n`, where n is the usb interface of the device.
 
 ## Logitech G105 Keyboard
 ```shell
-$ cat /sys/kernel/debug/hid/0003:046D:C248.005E/rdesc > g105/info/rdesc.0
-$ cat /sys/kernel/debug/hid/0003:046D:C248.005F/rdesc > g105/info/rdesc.1
+$ cat /sys/kernel/debug/hid/0003:046D:C248.005E/rdesc > g105/info/rdesc.c248.0
+$ cat /sys/kernel/debug/hid/0003:046D:C248.005F/rdesc > g105/info/rdesc.c248.1
 ```
 ## Logitech G19 Keyboard
 ```shell
@@ -51,8 +51,8 @@ $ cat /sys/kernel/debug/hid/0003:046D:C229.0018/rdesc > g19/info/rdesc.c229.0
 ```
 ## Logitech G602 Mouse
 ```shell
-$ cat /sys/kernel/debug/hid/0003:046D:C537.0053/rdesc > g602/info/rdesc.0
-$ cat /sys/kernel/debug/hid/0003:046D:C537.0054/rdesc > g602/info/rdesc.1
+$ cat /sys/kernel/debug/hid/0003:046D:C537.0053/rdesc > g602/info/rdesc.c537.0
+$ cat /sys/kernel/debug/hid/0003:046D:C537.0054/rdesc > g602/info/rdesc.c537.1
 ```
 
 # Usbmon dumps
