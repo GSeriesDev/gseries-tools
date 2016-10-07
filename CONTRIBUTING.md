@@ -110,7 +110,7 @@ $ echo $((24/6))
 $ split -d -l 4 g105/info/raw/usbmon-g g105/info/raw/usbmon-g
 # splits the files into 4-line segments, prefixed with the name usbmon-g
 $ for i in {5..0}
-> do mv g105/info/raw/usbmon-g0$i g105/info/raw/usbmon-g$(($i+i)).log
+> do mv g105/info/raw/usbmon-g0$i g105/info/raw/usbmon-g$(($i+1)).log
 > done
 # renames the split files; split starts counting at 0, so we move them to
 # match the actual filename to the gkey number (there is no g0, for example)
