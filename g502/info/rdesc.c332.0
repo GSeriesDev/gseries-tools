@@ -1,0 +1,84 @@
+05 01 09 02 a1 01 09 01 a1 00 05 09 19 01 29 10 15 00 25 01 95 10 75 01 81 02 05 01 16 01 80 26 ff 7f 75 10 95 02 09 30 09 31 81 06 15 81 25 7f 75 08 95 01 09 38 81 06 05 0c 0a 38 02 95 01 81 06 c0 c0 
+
+  INPUT[INPUT]
+    Field(0)
+      Physical(GenericDesktop.Pointer)
+      Application(GenericDesktop.Mouse)
+      Usage(16)
+        Button.0001
+        Button.0002
+        Button.0003
+        Button.0004
+        Button.0005
+        Button.0006
+        Button.0007
+        Button.0008
+        Button.0009
+        Button.000a
+        Button.000b
+        Button.000c
+        Button.000d
+        Button.000e
+        Button.000f
+        Button.0010
+      Logical Minimum(0)
+      Logical Maximum(1)
+      Report Size(1)
+      Report Count(16)
+      Report Offset(0)
+      Flags( Variable Absolute )
+    Field(1)
+      Physical(GenericDesktop.Pointer)
+      Application(GenericDesktop.Mouse)
+      Usage(2)
+        GenericDesktop.X
+        GenericDesktop.Y
+      Logical Minimum(-32767)
+      Logical Maximum(32767)
+      Report Size(16)
+      Report Count(2)
+      Report Offset(16)
+      Flags( Variable Relative )
+    Field(2)
+      Physical(GenericDesktop.Pointer)
+      Application(GenericDesktop.Mouse)
+      Usage(1)
+        GenericDesktop.Wheel
+      Logical Minimum(-127)
+      Logical Maximum(127)
+      Report Size(8)
+      Report Count(1)
+      Report Offset(48)
+      Flags( Variable Relative )
+    Field(3)
+      Physical(GenericDesktop.Pointer)
+      Application(GenericDesktop.Mouse)
+      Usage(1)
+        Consumer.HorizontalWheel
+      Logical Minimum(-127)
+      Logical Maximum(127)
+      Report Size(8)
+      Report Count(1)
+      Report Offset(56)
+      Flags( Variable Relative )
+
+Button.0001 ---> Key.LeftBtn
+Button.0002 ---> Key.RightBtn
+Button.0003 ---> Key.MiddleBtn
+Button.0004 ---> Key.SideBtn
+Button.0005 ---> Key.ExtraBtn
+Button.0006 ---> Key.ForwardBtn
+Button.0007 ---> Key.BackBtn
+Button.0008 ---> Key.TaskBtn
+Button.0009 ---> Key.?
+Button.000a ---> Key.?
+Button.000b ---> Key.?
+Button.000c ---> Key.?
+Button.000d ---> Key.?
+Button.000e ---> Key.?
+Button.000f ---> Key.?
+Button.0010 ---> Key.?
+GenericDesktop.X ---> Relative.X
+GenericDesktop.Y ---> Relative.Y
+GenericDesktop.Wheel ---> Relative.Wheel
+Consumer.HorizontalWheel ---> Relative.HWheel
