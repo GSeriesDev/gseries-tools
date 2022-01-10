@@ -1,0 +1,844 @@
+05 0c 09 01 a1 01 85 01 09 e9 09 ea 75 01 95 02 15 00 25 01 81 02 75 06 95 01 81 03 75 18 81 03 c0 05 0b 09 01 a1 01 85 08 09 2f 75 01 81 06 09 20 81 06 75 06 81 03 c0 06 43 ff 0a 02 02 a1 01 85 11 95 13 75 08 26 ff 00 09 02 81 00 09 02 91 00 c0 06 00 ff 09 01 a1 01 09 0a a1 02 85 ff 95 01 75 20 09 0b 17 01 00 00 80 27 ff ff ff 7f 81 02 c0 09 22 a1 02 85 90 09 33 75 08 15 00 26 ff 00 81 02 09 34 81 02 05 01 09 3b 75 10 27 ff ff 00 00 81 02 06 00 ff 09 0a a1 02 05 0a 19 01 29 0a 95 0a 75 08 26 ff 00 81 02 c0 c0 06 00 ff 09 22 a1 02 85 90 09 33 95 01 91 02 09 34 91 02 05 01 09 3b 75 10 27 ff ff 00 00 91 02 06 00 ff 09 0a a1 02 05 0a 19 01 29 0a 95 0a 75 08 26 ff 00 91 02 c0 c0 06 00 ff 09 22 a1 02 85 c4 09 33 95 01 81 02 09 34 81 02 05 01 09 3b 75 10 27 ff ff 00 00 81 02 06 00 ff 09 0a a1 02 05 0a 19 01 29 3b 95 3b 75 08 26 ff 00 81 02 c0 c0 06 00 ff 09 22 a1 02 85 c4 09 33 95 01 91 02 09 34 91 02 05 01 09 3b 75 10 27 ff ff 00 00 91 02 06 00 ff 09 0a a1 02 05 0a 19 01 29 3b 95 3b 75 08 26 ff 00 91 02 c0 c0 06 00 ff 09 0c a1 02 85 ff 05 01 09 3b 95 01 b1 02 09 3a a1 02 05 0a 19 01 29 3e 95 3e b1 02 c0 c0 06 00 ff 09 0c a1 02 85 e2 05 01 09 3b 95 01 81 02 09 3a a1 02 05 0a 19 01 29 3e 95 3e 81 02 c0 c0 c0 
+
+  INPUT(1)[INPUT]
+    Field(0)
+      Application(Consumer.0001)
+      Usage(2)
+        Consumer.00e9
+        Consumer.00ea
+      Logical Minimum(0)
+      Logical Maximum(1)
+      Report Size(1)
+      Report Count(2)
+      Report Offset(0)
+      Flags( Variable Absolute )
+  INPUT(8)[INPUT]
+    Field(0)
+      Application(000b.0001)
+      Usage(1)
+        000b.002f
+      Logical Minimum(0)
+      Logical Maximum(1)
+      Report Size(1)
+      Report Count(1)
+      Report Offset(0)
+      Flags( Variable Relative )
+    Field(1)
+      Application(000b.0001)
+      Usage(1)
+        000b.0020
+      Logical Minimum(0)
+      Logical Maximum(1)
+      Report Size(1)
+      Report Count(1)
+      Report Offset(1)
+      Flags( Variable Relative )
+  INPUT(17)[INPUT]
+    Field(0)
+      Application(ff43.0202)
+      Usage(19)
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(19)
+      Report Offset(0)
+      Flags( Array Absolute )
+  INPUT(255)[INPUT]
+    Field(0)
+      Logical(ff00.000a)
+      Application(ff00.0001)
+      Usage(1)
+        ff00.000b
+      Logical Minimum(-2147483647)
+      Logical Maximum(2147483647)
+      Report Size(32)
+      Report Count(1)
+      Report Offset(0)
+      Flags( Variable Absolute )
+  INPUT(144)[INPUT]
+    Field(0)
+      Logical(ff00.0022)
+      Application(ff00.0001)
+      Usage(1)
+        ff00.0033
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(1)
+      Report Offset(0)
+      Flags( Variable Absolute )
+    Field(1)
+      Logical(ff00.0022)
+      Application(ff00.0001)
+      Usage(1)
+        ff00.0034
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(1)
+      Report Offset(8)
+      Flags( Variable Absolute )
+    Field(2)
+      Logical(ff00.0022)
+      Application(ff00.0001)
+      Usage(1)
+        GenericDesktop.ByteCount
+      Logical Minimum(0)
+      Logical Maximum(65535)
+      Report Size(16)
+      Report Count(1)
+      Report Offset(16)
+      Flags( Variable Absolute )
+    Field(3)
+      Logical(ff00.000a)
+      Application(ff00.0001)
+      Usage(10)
+        Ordinal.0001
+        Ordinal.0002
+        Ordinal.0003
+        Ordinal.0004
+        Ordinal.0005
+        Ordinal.0006
+        Ordinal.0007
+        Ordinal.0008
+        Ordinal.0009
+        Ordinal.000a
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(10)
+      Report Offset(32)
+      Flags( Variable Absolute )
+  INPUT(196)[INPUT]
+    Field(0)
+      Logical(ff00.0022)
+      Application(ff00.0001)
+      Usage(1)
+        ff00.0033
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(1)
+      Report Offset(0)
+      Flags( Variable Absolute )
+    Field(1)
+      Logical(ff00.0022)
+      Application(ff00.0001)
+      Usage(1)
+        ff00.0034
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(1)
+      Report Offset(8)
+      Flags( Variable Absolute )
+    Field(2)
+      Logical(ff00.0022)
+      Application(ff00.0001)
+      Usage(1)
+        GenericDesktop.ByteCount
+      Logical Minimum(0)
+      Logical Maximum(65535)
+      Report Size(16)
+      Report Count(1)
+      Report Offset(16)
+      Flags( Variable Absolute )
+    Field(3)
+      Logical(ff00.000a)
+      Application(ff00.0001)
+      Usage(59)
+        Ordinal.0001
+        Ordinal.0002
+        Ordinal.0003
+        Ordinal.0004
+        Ordinal.0005
+        Ordinal.0006
+        Ordinal.0007
+        Ordinal.0008
+        Ordinal.0009
+        Ordinal.000a
+        Ordinal.000b
+        Ordinal.000c
+        Ordinal.000d
+        Ordinal.000e
+        Ordinal.000f
+        Ordinal.0010
+        Ordinal.0011
+        Ordinal.0012
+        Ordinal.0013
+        Ordinal.0014
+        Ordinal.0015
+        Ordinal.0016
+        Ordinal.0017
+        Ordinal.0018
+        Ordinal.0019
+        Ordinal.001a
+        Ordinal.001b
+        Ordinal.001c
+        Ordinal.001d
+        Ordinal.001e
+        Ordinal.001f
+        Ordinal.0020
+        Ordinal.0021
+        Ordinal.0022
+        Ordinal.0023
+        Ordinal.0024
+        Ordinal.0025
+        Ordinal.0026
+        Ordinal.0027
+        Ordinal.0028
+        Ordinal.0029
+        Ordinal.002a
+        Ordinal.002b
+        Ordinal.002c
+        Ordinal.002d
+        Ordinal.002e
+        Ordinal.002f
+        Ordinal.0030
+        Ordinal.0031
+        Ordinal.0032
+        Ordinal.0033
+        Ordinal.0034
+        Ordinal.0035
+        Ordinal.0036
+        Ordinal.0037
+        Ordinal.0038
+        Ordinal.0039
+        Ordinal.003a
+        Ordinal.003b
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(59)
+      Report Offset(32)
+      Flags( Variable Absolute )
+  INPUT(226)[INPUT]
+    Field(0)
+      Logical(ff00.000c)
+      Application(ff00.0001)
+      Usage(1)
+        GenericDesktop.ByteCount
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(1)
+      Report Offset(0)
+      Flags( Variable Absolute )
+    Field(1)
+      Logical(GenericDesktop.CountedBuffer)
+      Application(ff00.0001)
+      Usage(62)
+        Ordinal.0001
+        Ordinal.0002
+        Ordinal.0003
+        Ordinal.0004
+        Ordinal.0005
+        Ordinal.0006
+        Ordinal.0007
+        Ordinal.0008
+        Ordinal.0009
+        Ordinal.000a
+        Ordinal.000b
+        Ordinal.000c
+        Ordinal.000d
+        Ordinal.000e
+        Ordinal.000f
+        Ordinal.0010
+        Ordinal.0011
+        Ordinal.0012
+        Ordinal.0013
+        Ordinal.0014
+        Ordinal.0015
+        Ordinal.0016
+        Ordinal.0017
+        Ordinal.0018
+        Ordinal.0019
+        Ordinal.001a
+        Ordinal.001b
+        Ordinal.001c
+        Ordinal.001d
+        Ordinal.001e
+        Ordinal.001f
+        Ordinal.0020
+        Ordinal.0021
+        Ordinal.0022
+        Ordinal.0023
+        Ordinal.0024
+        Ordinal.0025
+        Ordinal.0026
+        Ordinal.0027
+        Ordinal.0028
+        Ordinal.0029
+        Ordinal.002a
+        Ordinal.002b
+        Ordinal.002c
+        Ordinal.002d
+        Ordinal.002e
+        Ordinal.002f
+        Ordinal.0030
+        Ordinal.0031
+        Ordinal.0032
+        Ordinal.0033
+        Ordinal.0034
+        Ordinal.0035
+        Ordinal.0036
+        Ordinal.0037
+        Ordinal.0038
+        Ordinal.0039
+        Ordinal.003a
+        Ordinal.003b
+        Ordinal.003c
+        Ordinal.003d
+        Ordinal.003e
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(62)
+      Report Offset(8)
+      Flags( Variable Absolute )
+  OUTPUT(17)[OUTPUT]
+    Field(0)
+      Application(ff43.0202)
+      Usage(19)
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+        ff43.0002
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(19)
+      Report Offset(0)
+      Flags( Array Absolute )
+  OUTPUT(144)[OUTPUT]
+    Field(0)
+      Logical(ff00.0022)
+      Application(ff00.0001)
+      Usage(1)
+        ff00.0033
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(1)
+      Report Offset(0)
+      Flags( Variable Absolute )
+    Field(1)
+      Logical(ff00.0022)
+      Application(ff00.0001)
+      Usage(1)
+        ff00.0034
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(1)
+      Report Offset(8)
+      Flags( Variable Absolute )
+    Field(2)
+      Logical(ff00.0022)
+      Application(ff00.0001)
+      Usage(1)
+        GenericDesktop.ByteCount
+      Logical Minimum(0)
+      Logical Maximum(65535)
+      Report Size(16)
+      Report Count(1)
+      Report Offset(16)
+      Flags( Variable Absolute )
+    Field(3)
+      Logical(ff00.000a)
+      Application(ff00.0001)
+      Usage(10)
+        Ordinal.0001
+        Ordinal.0002
+        Ordinal.0003
+        Ordinal.0004
+        Ordinal.0005
+        Ordinal.0006
+        Ordinal.0007
+        Ordinal.0008
+        Ordinal.0009
+        Ordinal.000a
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(10)
+      Report Offset(32)
+      Flags( Variable Absolute )
+  OUTPUT(196)[OUTPUT]
+    Field(0)
+      Logical(ff00.0022)
+      Application(ff00.0001)
+      Usage(1)
+        ff00.0033
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(1)
+      Report Offset(0)
+      Flags( Variable Absolute )
+    Field(1)
+      Logical(ff00.0022)
+      Application(ff00.0001)
+      Usage(1)
+        ff00.0034
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(1)
+      Report Offset(8)
+      Flags( Variable Absolute )
+    Field(2)
+      Logical(ff00.0022)
+      Application(ff00.0001)
+      Usage(1)
+        GenericDesktop.ByteCount
+      Logical Minimum(0)
+      Logical Maximum(65535)
+      Report Size(16)
+      Report Count(1)
+      Report Offset(16)
+      Flags( Variable Absolute )
+    Field(3)
+      Logical(ff00.000a)
+      Application(ff00.0001)
+      Usage(59)
+        Ordinal.0001
+        Ordinal.0002
+        Ordinal.0003
+        Ordinal.0004
+        Ordinal.0005
+        Ordinal.0006
+        Ordinal.0007
+        Ordinal.0008
+        Ordinal.0009
+        Ordinal.000a
+        Ordinal.000b
+        Ordinal.000c
+        Ordinal.000d
+        Ordinal.000e
+        Ordinal.000f
+        Ordinal.0010
+        Ordinal.0011
+        Ordinal.0012
+        Ordinal.0013
+        Ordinal.0014
+        Ordinal.0015
+        Ordinal.0016
+        Ordinal.0017
+        Ordinal.0018
+        Ordinal.0019
+        Ordinal.001a
+        Ordinal.001b
+        Ordinal.001c
+        Ordinal.001d
+        Ordinal.001e
+        Ordinal.001f
+        Ordinal.0020
+        Ordinal.0021
+        Ordinal.0022
+        Ordinal.0023
+        Ordinal.0024
+        Ordinal.0025
+        Ordinal.0026
+        Ordinal.0027
+        Ordinal.0028
+        Ordinal.0029
+        Ordinal.002a
+        Ordinal.002b
+        Ordinal.002c
+        Ordinal.002d
+        Ordinal.002e
+        Ordinal.002f
+        Ordinal.0030
+        Ordinal.0031
+        Ordinal.0032
+        Ordinal.0033
+        Ordinal.0034
+        Ordinal.0035
+        Ordinal.0036
+        Ordinal.0037
+        Ordinal.0038
+        Ordinal.0039
+        Ordinal.003a
+        Ordinal.003b
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(59)
+      Report Offset(32)
+      Flags( Variable Absolute )
+  FEATURE(255)[FEATURE]
+    Field(0)
+      Logical(ff00.000c)
+      Application(ff00.0001)
+      Usage(1)
+        GenericDesktop.ByteCount
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(1)
+      Report Offset(0)
+      Flags( Variable Absolute )
+    Field(1)
+      Logical(GenericDesktop.CountedBuffer)
+      Application(ff00.0001)
+      Usage(62)
+        Ordinal.0001
+        Ordinal.0002
+        Ordinal.0003
+        Ordinal.0004
+        Ordinal.0005
+        Ordinal.0006
+        Ordinal.0007
+        Ordinal.0008
+        Ordinal.0009
+        Ordinal.000a
+        Ordinal.000b
+        Ordinal.000c
+        Ordinal.000d
+        Ordinal.000e
+        Ordinal.000f
+        Ordinal.0010
+        Ordinal.0011
+        Ordinal.0012
+        Ordinal.0013
+        Ordinal.0014
+        Ordinal.0015
+        Ordinal.0016
+        Ordinal.0017
+        Ordinal.0018
+        Ordinal.0019
+        Ordinal.001a
+        Ordinal.001b
+        Ordinal.001c
+        Ordinal.001d
+        Ordinal.001e
+        Ordinal.001f
+        Ordinal.0020
+        Ordinal.0021
+        Ordinal.0022
+        Ordinal.0023
+        Ordinal.0024
+        Ordinal.0025
+        Ordinal.0026
+        Ordinal.0027
+        Ordinal.0028
+        Ordinal.0029
+        Ordinal.002a
+        Ordinal.002b
+        Ordinal.002c
+        Ordinal.002d
+        Ordinal.002e
+        Ordinal.002f
+        Ordinal.0030
+        Ordinal.0031
+        Ordinal.0032
+        Ordinal.0033
+        Ordinal.0034
+        Ordinal.0035
+        Ordinal.0036
+        Ordinal.0037
+        Ordinal.0038
+        Ordinal.0039
+        Ordinal.003a
+        Ordinal.003b
+        Ordinal.003c
+        Ordinal.003d
+        Ordinal.003e
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Report Size(8)
+      Report Count(62)
+      Report Offset(8)
+      Flags( Variable Absolute )
+
+Consumer.00e9 ---> Key.VolumeUp
+Consumer.00ea ---> Key.VolumeDown
+000b.002f ---> Key.?
+000b.0020 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff00.000b ---> Sync.Report
+ff00.0033 ---> Sync.Report
+ff00.0034 ---> Sync.Report
+GenericDesktop.ByteCount ---> Absolute.Misc
+Ordinal.0001 ---> Sync.Report
+Ordinal.0002 ---> Sync.Report
+Ordinal.0003 ---> Sync.Report
+Ordinal.0004 ---> Sync.Report
+Ordinal.0005 ---> Sync.Report
+Ordinal.0006 ---> Sync.Report
+Ordinal.0007 ---> Sync.Report
+Ordinal.0008 ---> Sync.Report
+Ordinal.0009 ---> Sync.Report
+Ordinal.000a ---> Sync.Report
+ff00.0033 ---> Sync.Report
+ff00.0034 ---> Sync.Report
+GenericDesktop.ByteCount ---> Sync.Report
+Ordinal.0001 ---> Sync.Report
+Ordinal.0002 ---> Sync.Report
+Ordinal.0003 ---> Sync.Report
+Ordinal.0004 ---> Sync.Report
+Ordinal.0005 ---> Sync.Report
+Ordinal.0006 ---> Sync.Report
+Ordinal.0007 ---> Sync.Report
+Ordinal.0008 ---> Sync.Report
+Ordinal.0009 ---> Sync.Report
+Ordinal.000a ---> Sync.Report
+Ordinal.000b ---> Sync.Report
+Ordinal.000c ---> Sync.Report
+Ordinal.000d ---> Sync.Report
+Ordinal.000e ---> Sync.Report
+Ordinal.000f ---> Sync.Report
+Ordinal.0010 ---> Sync.Report
+Ordinal.0011 ---> Sync.Report
+Ordinal.0012 ---> Sync.Report
+Ordinal.0013 ---> Sync.Report
+Ordinal.0014 ---> Sync.Report
+Ordinal.0015 ---> Sync.Report
+Ordinal.0016 ---> Sync.Report
+Ordinal.0017 ---> Sync.Report
+Ordinal.0018 ---> Sync.Report
+Ordinal.0019 ---> Sync.Report
+Ordinal.001a ---> Sync.Report
+Ordinal.001b ---> Sync.Report
+Ordinal.001c ---> Sync.Report
+Ordinal.001d ---> Sync.Report
+Ordinal.001e ---> Sync.Report
+Ordinal.001f ---> Sync.Report
+Ordinal.0020 ---> Sync.Report
+Ordinal.0021 ---> Sync.Report
+Ordinal.0022 ---> Sync.Report
+Ordinal.0023 ---> Sync.Report
+Ordinal.0024 ---> Sync.Report
+Ordinal.0025 ---> Sync.Report
+Ordinal.0026 ---> Sync.Report
+Ordinal.0027 ---> Sync.Report
+Ordinal.0028 ---> Sync.Report
+Ordinal.0029 ---> Sync.Report
+Ordinal.002a ---> Sync.Report
+Ordinal.002b ---> Sync.Report
+Ordinal.002c ---> Sync.Report
+Ordinal.002d ---> Sync.Report
+Ordinal.002e ---> Sync.Report
+Ordinal.002f ---> Sync.Report
+Ordinal.0030 ---> Sync.Report
+Ordinal.0031 ---> Sync.Report
+Ordinal.0032 ---> Sync.Report
+Ordinal.0033 ---> Sync.Report
+Ordinal.0034 ---> Sync.Report
+Ordinal.0035 ---> Sync.Report
+Ordinal.0036 ---> Sync.Report
+Ordinal.0037 ---> Sync.Report
+Ordinal.0038 ---> Sync.Report
+Ordinal.0039 ---> Sync.Report
+Ordinal.003a ---> Sync.Report
+Ordinal.003b ---> Sync.Report
+GenericDesktop.ByteCount ---> Sync.Report
+Ordinal.0001 ---> Sync.Report
+Ordinal.0002 ---> Sync.Report
+Ordinal.0003 ---> Sync.Report
+Ordinal.0004 ---> Sync.Report
+Ordinal.0005 ---> Sync.Report
+Ordinal.0006 ---> Sync.Report
+Ordinal.0007 ---> Sync.Report
+Ordinal.0008 ---> Sync.Report
+Ordinal.0009 ---> Sync.Report
+Ordinal.000a ---> Sync.Report
+Ordinal.000b ---> Sync.Report
+Ordinal.000c ---> Sync.Report
+Ordinal.000d ---> Sync.Report
+Ordinal.000e ---> Sync.Report
+Ordinal.000f ---> Sync.Report
+Ordinal.0010 ---> Sync.Report
+Ordinal.0011 ---> Sync.Report
+Ordinal.0012 ---> Sync.Report
+Ordinal.0013 ---> Sync.Report
+Ordinal.0014 ---> Sync.Report
+Ordinal.0015 ---> Sync.Report
+Ordinal.0016 ---> Sync.Report
+Ordinal.0017 ---> Sync.Report
+Ordinal.0018 ---> Sync.Report
+Ordinal.0019 ---> Sync.Report
+Ordinal.001a ---> Sync.Report
+Ordinal.001b ---> Sync.Report
+Ordinal.001c ---> Sync.Report
+Ordinal.001d ---> Sync.Report
+Ordinal.001e ---> Sync.Report
+Ordinal.001f ---> Sync.Report
+Ordinal.0020 ---> Sync.Report
+Ordinal.0021 ---> Sync.Report
+Ordinal.0022 ---> Sync.Report
+Ordinal.0023 ---> Sync.Report
+Ordinal.0024 ---> Sync.Report
+Ordinal.0025 ---> Sync.Report
+Ordinal.0026 ---> Sync.Report
+Ordinal.0027 ---> Sync.Report
+Ordinal.0028 ---> Sync.Report
+Ordinal.0029 ---> Sync.Report
+Ordinal.002a ---> Sync.Report
+Ordinal.002b ---> Sync.Report
+Ordinal.002c ---> Sync.Report
+Ordinal.002d ---> Sync.Report
+Ordinal.002e ---> Sync.Report
+Ordinal.002f ---> Sync.Report
+Ordinal.0030 ---> Sync.Report
+Ordinal.0031 ---> Sync.Report
+Ordinal.0032 ---> Sync.Report
+Ordinal.0033 ---> Sync.Report
+Ordinal.0034 ---> Sync.Report
+Ordinal.0035 ---> Sync.Report
+Ordinal.0036 ---> Sync.Report
+Ordinal.0037 ---> Sync.Report
+Ordinal.0038 ---> Sync.Report
+Ordinal.0039 ---> Sync.Report
+Ordinal.003a ---> Sync.Report
+Ordinal.003b ---> Sync.Report
+Ordinal.003c ---> Sync.Report
+Ordinal.003d ---> Sync.Report
+Ordinal.003e ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff43.0002 ---> Sync.Report
+ff00.0033 ---> Sync.Report
+ff00.0034 ---> Sync.Report
+GenericDesktop.ByteCount ---> Sync.Report
+Ordinal.0001 ---> Sync.Report
+Ordinal.0002 ---> Sync.Report
+Ordinal.0003 ---> Sync.Report
+Ordinal.0004 ---> Sync.Report
+Ordinal.0005 ---> Sync.Report
+Ordinal.0006 ---> Sync.Report
+Ordinal.0007 ---> Sync.Report
+Ordinal.0008 ---> Sync.Report
+Ordinal.0009 ---> Sync.Report
+Ordinal.000a ---> Sync.Report
+ff00.0033 ---> Sync.Report
+ff00.0034 ---> Sync.Report
+GenericDesktop.ByteCount ---> Sync.Report
+Ordinal.0001 ---> Sync.Report
+Ordinal.0002 ---> Sync.Report
+Ordinal.0003 ---> Sync.Report
+Ordinal.0004 ---> Sync.Report
+Ordinal.0005 ---> Sync.Report
+Ordinal.0006 ---> Sync.Report
+Ordinal.0007 ---> Sync.Report
+Ordinal.0008 ---> Sync.Report
+Ordinal.0009 ---> Sync.Report
+Ordinal.000a ---> Sync.Report
+Ordinal.000b ---> Sync.Report
+Ordinal.000c ---> Sync.Report
+Ordinal.000d ---> Sync.Report
+Ordinal.000e ---> Sync.Report
+Ordinal.000f ---> Sync.Report
+Ordinal.0010 ---> Sync.Report
+Ordinal.0011 ---> Sync.Report
+Ordinal.0012 ---> Sync.Report
+Ordinal.0013 ---> Sync.Report
+Ordinal.0014 ---> Sync.Report
+Ordinal.0015 ---> Sync.Report
+Ordinal.0016 ---> Sync.Report
+Ordinal.0017 ---> Sync.Report
+Ordinal.0018 ---> Sync.Report
+Ordinal.0019 ---> Sync.Report
+Ordinal.001a ---> Sync.Report
+Ordinal.001b ---> Sync.Report
+Ordinal.001c ---> Sync.Report
+Ordinal.001d ---> Sync.Report
+Ordinal.001e ---> Sync.Report
+Ordinal.001f ---> Sync.Report
+Ordinal.0020 ---> Sync.Report
+Ordinal.0021 ---> Sync.Report
+Ordinal.0022 ---> Sync.Report
+Ordinal.0023 ---> Sync.Report
+Ordinal.0024 ---> Sync.Report
+Ordinal.0025 ---> Sync.Report
+Ordinal.0026 ---> Sync.Report
+Ordinal.0027 ---> Sync.Report
+Ordinal.0028 ---> Sync.Report
+Ordinal.0029 ---> Sync.Report
+Ordinal.002a ---> Sync.Report
+Ordinal.002b ---> Sync.Report
+Ordinal.002c ---> Sync.Report
+Ordinal.002d ---> Sync.Report
+Ordinal.002e ---> Sync.Report
+Ordinal.002f ---> Sync.Report
+Ordinal.0030 ---> Sync.Report
+Ordinal.0031 ---> Sync.Report
+Ordinal.0032 ---> Sync.Report
+Ordinal.0033 ---> Sync.Report
+Ordinal.0034 ---> Sync.Report
+Ordinal.0035 ---> Sync.Report
+Ordinal.0036 ---> Sync.Report
+Ordinal.0037 ---> Sync.Report
+Ordinal.0038 ---> Sync.Report
+Ordinal.0039 ---> Sync.Report
+Ordinal.003a ---> Sync.Report
+Ordinal.003b ---> Sync.Report
